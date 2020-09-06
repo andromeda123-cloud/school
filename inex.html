@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>श्री जनता उच्च माध्यमिक विधालय</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="top">
+    <h1>श्री जनता उच्च माध्यमिक विधालय</h1>
+  </div>
+  <div class="navbar">
+    <a href="C:\Users\Andromeda\Desktop\school\inex.html">होमपेज</a>
+    <a href="#news">सर्वेक्षण फारम</a>
+    <div class="dropdown">
+      <button class="dropbtn">विधालय परिचय
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">व्यवस्थापन समिति</a>
+        <a href="#">विधालयका शिक्षकहरू</a>
+        <a href="#">संस्थापक व्यक्तित्वहरु </a>
+        <a href="#">प्रधानाध्यापकहरू </a>
+        <a href="#">विद्यार्थी</a>
+      </div>
+    </div>
+    <a href="C:\Users\Andromeda\Desktop\school\suchana.html">सूचना</a>
+    <a href="#news">ग्यालरी</a>
+    <a href="#news">सम्पर्क</a>
+    <a href="#news">महत्वपूर्ण लिंकहरु</a>
+    <input type="text" placeholder="Search..">
+  </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="test.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="test1.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="test2.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+  <div class="wrapper">
+    <div>
+      <h1>संक्षिप्त परिचय</h1><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="test">
+      <img src="yoge.jpg" alt="">
+      <h2>निमित्त प्रधानाध्यापककाे सन्देश</h2>
+      <p>आजका बालबालिका भोलिका विश्व नागरिक हुन् । वर्तमानमा उनीहरूले पाएको शिक्षा आफ्नो, समाज , मुलुक र विश्वको शान्ति, समृद्धि एवम् विकासका आधार हो । रत्नराज्य मावि परिवार ती आधारलाई सुदृढ बनाउन कर्तव्यनिष्ठ रहँदै आएको छ । विद्यालयलाई आवश्यकता छ –
+        यहाँको सहयोग र सद्भावको।</p>
+    </div>
+  </div>
+  <div class="intro">
+    <h2>रत्नराज्य मावि : विगतदेखि वर्तमान सम्म</h2>
+    <p>तत्कालीन ग्रामविकास मन्त्री प्रेमप्रसाद आङ्दम्बेज्यूबाट २०१७ साल वैशाख १६ गते यस विद्यालयको शिलान्यास भए तापनि ०१८ चैत १७ गतेदेखि पठनपाठन आरम्भ भएको थियो । पण्डित श्री मोदनाथ न्यौपानेले केही बालबालिकालाई पढाएर शिक्षण कार्यको शुभारम्भ गर्नु
+      भएको थियो । विद्यालयको भवन थिएन । भवन निर्माण उपसमितिका अध्यक्ष कमलविक्रम पाण्डेको तदारुकताबाट तात्कालिक श्री ५ बडामहारानी रत्नराज्य लक्ष्मीदेवी शाहबाट ८ हजार रुपियाँ विद्यालय निर्माणका लागि प्रदान गरिएको थियो । २०२१ साल वैशाख २१ गते यस
+      रत्नराज्य लक्ष्मीदेवी विद्यालयको नामा यसको उद्घाटन बडामहारानीबाट भएको अभिलेख रहेको छ । तत्कालीन प्रधानअध्यापक पदमसिंह कार्कीको सक्रियतामा यो विद्यालय माध्यमिक विद्यालयको रूपमा स्थापित भएको हो ।</p>
+  </div>
+  <div class="wrapper1">
+    <div class="test1">
+      <img src="test1.jpg" alt="" class="center">
+      <h2>हाम्राे गाैरव</h2>
+      <p>अक्षराम्भ गर्ने शिशुदेखि माध्यमिक तहसम्म यस विद्यालयबाट हजारौ विद्यार्थीहरू लाभान्वित भए , भइरहेका छन् । यस विद्यालयका विद्यार्थीले २०४३ को एस एलसी परीक्षामा बोर्ड प्रथम र ४७ सालमा बोर्ड तृतीय स्थान हासिल गरेकामा विद्यालय गौरवान्वित रहँदै
+        आएको छ ।</p>
+    </div>
+    <div class="test1">
+      <img src="test2.jpg" alt="" class="center">
+      <h2>हाम्राे गाैरव</h2>
+      <p>अक्षराम्भ गर्ने शिशुदेखि माध्यमिक तहसम्म यस विद्यालयबाट हजारौ विद्यार्थीहरू लाभान्वित भए , भइरहेका छन् । यस विद्यालयका विद्यार्थीले २०४३ को एस एलसी परीक्षामा बोर्ड प्रथम र ४७ सालमा बोर्ड तृतीय स्थान हासिल गरेकामा विद्यालय गौरवान्वित रहँदै
+        आएको छ ।</p>
+    </div>
+    <div class="test1">
+      <img src="test1.jpg" alt="" class="center">
+      <h2>हाम्राे गाैरव</h2>
+      <p>अक्षराम्भ गर्ने शिशुदेखि माध्यमिक तहसम्म यस विद्यालयबाट हजारौ विद्यार्थीहरू लाभान्वित भए , भइरहेका छन् । यस विद्यालयका विद्यार्थीले २०४३ को एस एलसी परीक्षामा बोर्ड प्रथम र ४७ सालमा बोर्ड तृतीय स्थान हासिल गरेकामा विद्यालय गौरवान्वित रहँदै
+        आएको छ ।</p>
+    </div>
+  </div>
+  <div class="middle-container">
+    <div class="font">
+      <h1><i class="fa fa-book fa-2x" aria-hidden="true"></i></h1>
+    <h2>अंग्रेजी तथा नेपाली मध्यममा कक्षा संचालन</h2>
+    </div>
+    <div class="font">
+      <h1><i class="fa fa-desktop fa-2x" aria-hidden="true"></i></h1>
+    <h2>कम्प्यूटर तथा विज्ञान प्रयोगशाला</h2>
+    </div>
+    <div class="font">
+      <h1><i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i></h1>
+      <h2>विद्यार्थी उपयोगी पुस्तकालया</h2>
+    </div>
+    <div class="font">
+      <h1><i class="fa fa-trophy fa-2x" aria-hidden="true"></i></h1>
+      <h2>खेलकुद, सङ्गीत , नृत्य , साहित्य सिर्जनालाई प्रोत्साहना</h2>
+    </div>
+    <div class="font">
+      <h1><i class="fa fa-sitemap fa-2x" aria-hidden="true"></i></h1>
+      <h2>कक्षा ११ –१२ मा शिक्षा, मानविकी, व्यवस्थापन संकाय</h2>
+    </div>
+  </div>
+  <div class="bottom-container">
+    <div class="test5">
+      <h1>सम्पर्क</h1>
+      <h2>श्री जनता उच्च माध्यमिक विधालय</h2>
+    <p>कटहरिया नगरपालिका, रौतहट
+        फाेन नं :  ०१ – ४४७१७५६
+             ०१ – ४४९३८९१</p>
+    </div>
+    <div class="another">
+      <h1>Google map coming soon.......</h1>
+    </div>
+  </div>
+    <div class="footer">
+        <div class="test6">
+      <h4>Copyright @ 2019 - Ratna Rajya Secondary School</h4>
+    </div>
+    </div>
+</body>
+</html>
